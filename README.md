@@ -1,2 +1,2 @@
-# get2knowu
-Gettingn to know you games all in one app
+# Get 2 Know U!
+Getting to know you games all in one app

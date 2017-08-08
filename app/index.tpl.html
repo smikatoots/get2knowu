@@ -4,22 +4,88 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>React/Redux Typing Game</title>
-    <meta name="description" content="React/Redux Typing Game">
+    <title>Get2KnowU</title>
+    <meta name="description" content="Get2KnowU">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        .word_box {
-            border: 1px solid black;
-            border-radius: 10px;
-            padding: 10px;
-            width: 80%;
+        /* Universal */
+        body {
+            font-family: "Avenir";
+            background-color: black;
+            color: white;
+            margin: auto;
+            height: 100vh;
+            cursor: default;
         }
-        .blue {
-            color: blue;
+
+        #prompt {
+            font-size: 70px;
         }
-        .yellow {
-            color: yellow;
+        /* Buttons */
+        button:active {
+            color: white;
+            outline: none;
         }
+        button:focus {
+            color: white;
+            outline: none;
+        }
+
+        @keyframes open {
+            from { transform: scale(0) }
+            to { transform: scale(1) }
+        }
+
+        @keyframes close {
+            from { transform: scale(1) }
+            to { transform: scale(0) }
+        }
+
+        .buttons-hidden {
+            animation: close 0.3s normal forwards ease-in-out;
+        }
+        .mild-hidden {
+            animation: close 0.3s 1s normal forwards ease-in-out;
+        }
+        .wild-hidden {
+            animation: close 0.3s 1.30s normal forwards ease-in-out;
+        }
+        .both-hidden {
+            animation: close 0.3s 1.60s normal forwards ease-in-out;
+        }
+
+        .buttons-show {
+            animation: open 0.3s normal ease-in-out;
+        }
+        .mild-show {
+            animation: open 0.3s normal ease-in-out;
+        }
+        .wild-show {
+            animation: open 0.3s normal ease-in-out;
+        }
+        .both-show {
+            animation: open 0.3s normal ease-in-out;
+        }
+
+        .mild, .wild, .both {
+            outline: none !important;
+        }
+        .mild:active, .mild:focus, .mild:hover, .mild:visited {
+            background-color: #39CCCC;
+        }
+        .wild:active, .wild:focus, .wild:hover {
+            background-color: pink;
+        }
+        .both:active, .both:focus, .both:hover {
+            background-color: grey;
+        }
+
+        @media screen and (max-width: 480px) {
+            #prompt {
+                font-size: 60px;
+            }
+        }
+
     </style>
 </head>
 

@@ -1,14 +1,13 @@
 import { routerReducer } from 'react-router-redux';
 import { combineReducers } from 'redux';
-import { wordListReducer, gameTimeReducer, userInputReducer } from './gameReducer';
-// import gameTimeReducer from './gameReducer';
+import { textChangeReducer, categoryChangeReducer } from './textReducer';
+// import { wordListReducer, gameTimeReducer, userInputReducer } from './gameReducer';
 // import * as types from '../actions/types';
 
 const rootReducer = combineReducers({
+    textChange: textChangeReducer,
+    categoryChange: categoryChangeReducer,
     routing: routerReducer,
-    wordList: wordListReducer,
-    gameTime: gameTimeReducer,
-    userInput: userInputReducer
 });
 
 export default rootReducer;

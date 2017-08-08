@@ -1,6 +1,4 @@
 // ACTION TYPES
-export const START_GAME = 'START_GAME';
-export const DECREMENT_TIMER = 'DECREMENT_TIMER';
-export const END_GAME = 'END_GAME';
-export const CHAR_ADDED = 'CHAR_ADDED';
-export const NEXT_WORD = 'NEXT_WORD';
+export const NEXT_TEXT = 'NEXT_TEXT';
+export const CHANGE_CATEGORY = 'CHANGE_CATEGORY';
+export const BACK_TO_ZERO = 'BACK_TO_ZERO';

@@ -1,32 +1,21 @@
-import {START_GAME, DECREMENT_TIMER, END_GAME, CHAR_ADDED, NEXT_WORD} from './types';
+import {NEXT_TEXT, CHANGE_CATEGORY, BACK_TO_ZERO} from './types';
 
-export function startGame() {
+export function nextText() {
     return {
-        type: START_GAME
+        type: NEXT_TEXT
     };
 }
 
-export function decrementTimer() {
+export function changeCategory(category) {
     return {
-        type: DECREMENT_TIMER
+        type: CHANGE_CATEGORY,
+        category
     };
 }
 
-export function endGame() {
+export function backToZero() {
     return {
-        type: END_GAME
-    };
-}
+        type: BACK_TO_ZERO,
 
-export function charAdded(letter) {
-    return {
-        type: CHAR_ADDED,
-        letter
-    };
-}
-
-export function nextWord() {
-    return {
-        type: NEXT_WORD
     };
 }
