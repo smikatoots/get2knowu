@@ -31,6 +31,14 @@ class App extends React.Component {
                 // onClick={() => this.props.handleOnClick()}
                 onKeyDown={(event) => this.props.handleKeyPress(event)}>
                 <Header />
+                <button
+                    type="text"
+                    onClick={() => this.props.changeGame('NEVER_HAVE_I_EVER')}>NEVER_HAVE_I_EVER
+                </button>
+                <button
+                    type="text"
+                    onClick={() => this.props.changeGame('TRUTH_OR_DARE')}>TRUTH_OR_DARE
+                </button>
                 <MiddleContainer />
                 <ButtonHolder
                     changeAndReset={(cat) => this.props.changeAndReset(cat)}
@@ -56,6 +64,7 @@ App.propTypes = {
     handleHover: PropTypes.func,
     filteredArray: PropTypes.array,
     bgColor: PropTypes.string,
+    changeGame: PropTypes.func
 };
 
 export default App;

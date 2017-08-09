@@ -1,24 +1,14 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
-import { nextText, changeCategory, backToZero, changeGame } from '../actions/index';
-import App from '../components/App';
+import { changeCategory, backToZero, changeGame } from '../actions/index';
+import Buttons from '../components/Buttons';
+// import Header from '../components/Header';
 import { _ } from 'underscore';
-import content from '../content';
 
-class AppContainer extends React.Component {
+class ButtonContainer extends React.Component {
     constructor(props) {
         super(props);
-    }
-
-    handleKeyPress = (event) => {
-        if (event.key === 'Enter') {
-            this.props.nextTextProp();
-        }
-    }
-
-    handleOnClick = () => {
-        this.props.nextTextProp();
     }
 
     resetZero = () => {
@@ -30,20 +20,19 @@ class AppContainer extends React.Component {
         this.props.changeCategoryProp(category);
     }
 
-    changeGame = (game) => {
-        this.props.changeGameProp(game);
-    }
-
     render() {
         return (
             <div>
-                <App
+                {/* <Header /> */}
+                <Buttons
                     handleKeyPress={(event) => this.handleKeyPress(event)}
                     handleOnClick={() => this.handleOnClick()}
                     changeAndReset={(category) => this.changeCatAndResetZero(category)}
+                    changeTheGame={(game) => this.changeTheGame(game)}
+                    isHovered={this.props.isHovered}
+                    // gameChange={this.props.gameChange}
                     // textChange={this.props.textChange}
-                    categoryChange={this.props.categoryChange}
-                    changeGame={(game) => this.changeGame(game)}
+                    // categoryChange={this.props.categoryChange}
                 />
             </div>
 
@@ -51,32 +40,35 @@ class AppContainer extends React.Component {
     }
 }
 
-AppContainer.propTypes = {
-    nextTextProp: PropTypes.func,
+ButtonContainer.propTypes = {
+    // nextTextProp: PropTypes.func,
     changeCategoryProp: PropTypes.func,
-    changeGameProp: PropTypes.func,
-    textChange: PropTypes.num,
-    categoryChange: PropTypes.object,
-    backToZeroProp: PropTypes.func
+    gameChange: PropTypes.object,
+    // textChange: PropTypes.num,
+    // categoryChange: PropTypes.object,
+    isHovered: PropTypes.boolean,
+    backToZeroProp: PropTypes.func,
+    changeGameProp: PropTypes.func
 };
 
 const mapStateToProps = (state) => {
     return {
         // textChange: state.textChange,
-        categoryChange: state.categoryChange
+        // categoryChange: state.categoryChange,
+        gameChange: state.gameChange
     };
 };
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        nextTextProp: () => dispatch(nextText()),
+        // nextTextProp: () => dispatch(nextText()),
         changeCategoryProp: (category) => dispatch(changeCategory(category)),
         backToZeroProp: () => dispatch(backToZero()),
-        changeGameProp: (game) => dispatch(changeGame(game)),
+        changeGameProp: (game) => dispatch(changeGame(game))
     };
 };
 
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(AppContainer);
+)(ButtonContainer);

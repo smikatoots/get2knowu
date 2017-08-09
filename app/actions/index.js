@@ -1,4 +1,4 @@
-import {NEXT_TEXT, CHANGE_CATEGORY, BACK_TO_ZERO} from './types';
+import {NEXT_TEXT, CHANGE_CATEGORY, BACK_TO_ZERO, CHANGE_GAME}  from './types';
 
 export function nextText() {
     return {
@@ -10,6 +10,13 @@ export function changeCategory(category) {
     return {
         type: CHANGE_CATEGORY,
         category
+    };
+}
+
+export function changeGame(game) {
+    return {
+        type: CHANGE_GAME,
+        game
     };
 }
 

@@ -13,7 +13,7 @@ export function configureStore(initialState) {
         initialState,
         compose(
             applyMiddleware(middleware),
-            // DevTools.instrument()
+            DevTools.instrument()
         )
     );
 }
