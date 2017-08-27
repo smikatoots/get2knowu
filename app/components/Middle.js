@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const styles = {
     never: {
         fontSize: '30px',
-        marginTop: '150px',
+        marginTop: '100px',
         fontWeight: '500',
     },
     prompt: {
@@ -33,12 +33,24 @@ class Middle extends React.Component {
     }
 
     render() {
+        let never = '';
         if (this.props.textChange === this.props.categoryChange.contents.length - 1) {
             this.resetZero();
         }
+
+        if (this.props.categoryChange.game === 'NEVER_HAVE_I_EVER') {
+            never = 'Never have I ever';
+        } else {
+            if (this.props.categoryChange.contents[this.props.textChange].category === 'TRUTH') {
+                never = 'Tell me the truth about';
+            } else {
+                never = 'I dare you to';
+            }
+        }
+
         return (
             <div id="middle" style={styles.middle}>
-                <p id="never" style={styles.never}>Never have I ever</p>
+                <p id="never" style={styles.never}>{never}</p>
                 <p id="prompt" style={styles.prompt}>{this.props.categoryChange.contents[this.props.textChange].text}.</p>
             </div>
         );

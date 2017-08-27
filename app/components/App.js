@@ -1,8 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ButtonHolder from './ButtonHolder';
+import BackButton from './BackButton';
 import Header from './Header';
 import MiddleContainer from '../containers/MiddleContainer';
+import GameContainer from '../containers/GameContainer';
+import GameButtonHolder from '../components/GameButtonHolder';
+
 import { Route, Switch } from 'react-router-dom';
 
 const styles = {
@@ -19,6 +23,12 @@ const styles = {
     p: {
         lineHeight: '60px',
     },
+    middle: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column'
+    }
 
 };
 
@@ -28,27 +38,17 @@ class App extends React.Component {
             <div id="main"
                 style={Object.assign({}, styles.main, { backgroundColor: this.props.categoryChange.color, outline: 'none' })}
                 tabIndex="1"
-                // onClick={() => this.props.handleOnClick()}
                 onKeyDown={(event) => this.props.handleKeyPress(event)}>
                 <Header />
-                <button
-                    type="text"
-                    onClick={() => this.props.changeGame('NEVER_HAVE_I_EVER')}>NEVER_HAVE_I_EVER
-                </button>
-                <button
-                    type="text"
-                    onClick={() => this.props.changeGame('TRUTH_OR_DARE')}>TRUTH_OR_DARE
-                </button>
-                <MiddleContainer />
-                <ButtonHolder
-                    changeAndReset={(cat) => this.props.changeAndReset(cat)}
-                />
-                {/* <div
-                    style={styles.rad}
-                    onMouseEnter={() => this.handleHover()}
-                    onMouseLeave={() => this.handleHover()}>
-                    <Buttons isHovered={this.state.isHovered} changeAndReset={(cat) => this.props.changeAndReset(cat)}/>
-                </div> */}
+                <GameButtonHolder />
+                {
+                    this.props.categoryChange.game === '' ?
+                    null :
+                    <div style={styles.middle}>
+                        <MiddleContainer />
+                        <ButtonHolder categoryChange={this.props.categoryChange} changeAndReset={(cat) => this.props.changeAndReset(cat)} />
+                    </div>
+                }
             </div>
         );
     }

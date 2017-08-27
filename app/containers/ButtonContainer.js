@@ -23,16 +23,15 @@ class ButtonContainer extends React.Component {
     render() {
         return (
             <div>
-                {/* <Header /> */}
                 <Buttons
                     handleKeyPress={(event) => this.handleKeyPress(event)}
                     handleOnClick={() => this.handleOnClick()}
                     changeAndReset={(category) => this.changeCatAndResetZero(category)}
                     changeTheGame={(game) => this.changeTheGame(game)}
                     isHovered={this.props.isHovered}
+                    categoryChange={this.props.categoryChange}
                     // gameChange={this.props.gameChange}
                     // textChange={this.props.textChange}
-                    // categoryChange={this.props.categoryChange}
                 />
             </div>
 
@@ -45,7 +44,7 @@ ButtonContainer.propTypes = {
     changeCategoryProp: PropTypes.func,
     gameChange: PropTypes.object,
     // textChange: PropTypes.num,
-    // categoryChange: PropTypes.object,
+    categoryChange: PropTypes.object,
     isHovered: PropTypes.boolean,
     backToZeroProp: PropTypes.func,
     changeGameProp: PropTypes.func
@@ -55,7 +54,7 @@ const mapStateToProps = (state) => {
     return {
         // textChange: state.textChange,
         // categoryChange: state.categoryChange,
-        gameChange: state.gameChange
+        // gameChange: state.gameChange
     };
 };
 

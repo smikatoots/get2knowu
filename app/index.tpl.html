@@ -42,7 +42,7 @@
         }
 
         .buttons-hidden {
-            animation: close 0.3s normal forwards ease-in-out;
+            animation: close 0.8s 1s normal forwards ease-in-out;
         }
         .mild-hidden {
             animation: close 0.3s 1s normal forwards ease-in-out;
@@ -55,7 +55,7 @@
         }
 
         .buttons-show {
-            animation: open 0.3s normal ease-in-out;
+            animation: open 0.8s normal ease-in-out;
         }
         .mild-show {
             animation: open 0.3s normal ease-in-out;
@@ -71,13 +71,16 @@
             outline: none !important;
         }
         .mild:active, .mild:focus, .mild:hover, .mild:visited {
-            background-color: #39CCCC;
+            background-color: #287CA7;
         }
         .wild:active, .wild:focus, .wild:hover {
-            background-color: pink;
+            background-color: #9A0951;
         }
         .both:active, .both:focus, .both:hover {
-            background-color: grey;
+            background-color: #443B83;
+        }
+        .normal-button:hover {
+            background-color: black;
         }
 
         @media screen and (max-width: 480px) {

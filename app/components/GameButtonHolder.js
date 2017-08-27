@@ -1,17 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Buttons from './Buttons';
+import GameContainer from '../containers/GameContainer';
 
 const styles = {
-    rad: {
-        height: 'auto',
-        width: 'auto',
-        position: 'absolute',
-        bottom: '5%'
-    },
 };
 
-class ButtonHolder extends React.Component {
+class GameButtonHolder extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -28,19 +23,18 @@ class ButtonHolder extends React.Component {
     render() {
         return (
             <div
-                style={styles.rad}
                 onMouseEnter={() => this.handleHover()}
                 onMouseLeave={() => this.handleHover()}>
-                <Buttons categoryChange={this.props.categoryChange} isHovered={this.state.isHovered} changeAndReset={(cat) => this.props.changeAndReset(cat)}/>
+                <GameContainer isHovered={this.state.isHovered}/>
             </div>
         );
     }
 }
 
-ButtonHolder.propTypes = {
+GameButtonHolder.propTypes = {
     changeAndReset: PropTypes.func,
     categoryChange: PropTypes.object
 };
 
 
-export default ButtonHolder;
+export default GameButtonHolder;
