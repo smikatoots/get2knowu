@@ -21,7 +21,7 @@ new WebpackDevServer(webpack(config), {
       chunks: false,
       chunkModules: false
     }
-}).listen((process.env.PORT || 3000), 'localhost', function (err) {
+}).listen((process.env.PORT || 3000), function (err) {
     if (err) {
         console.log(err);
     }
