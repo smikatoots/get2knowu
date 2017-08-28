@@ -1,276 +1,111 @@
 module.exports = [
     {
-        text: 'truth or dare1',
+        text: 'your deepest, darkest secret',
         category: 'TRUTH',
         game: 'truthordare'
     },
     {
-        text: 'truth or dare2',
+        text: 'your biggest insecurity about yourself',
         category: 'TRUTH',
         game: 'truthordare'
     },
     {
-        text: 'truth or dare3',
+        text: 'the last time you cried',
         category: 'TRUTH',
         game: 'truthordare'
     },
     {
-        text: 'truth or dare4',
+        text: 'your weirdest fetish',
         category: 'TRUTH',
         game: 'truthordare'
     },
     {
-        text: 'truth or dare5',
+        text: 'the one thing you would change about yourself and why',
         category: 'TRUTH',
         game: 'truthordare'
     },
-    // {
-    //     text: 'gone inside an ambulance',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'been to Disneyland, Disneyworld or Universal Studios',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'cried myself to sleep',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'peed in a bottle',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'marched or protested',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'given someone a fake phone number',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'had a person give me flowers',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'kissed in the rain',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'watched a horror movie by myself',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'travelled to anywhere in Europe',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'travelled to anywhere in Asia',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'had a close brush with death',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'been hospitalized',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'kissed someone on the lips',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'peed in a swimming pool',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'seen, felt or touched snow',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'farted and blamed it on someone else',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'failed an exam or test',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'broken a bone',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'dyed my hair',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'peed on my bed while dreaming',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'ridden a rollercoaster with a loop',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'had surgery',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'been on television',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'jumped off a cliff',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'bungy-jumped',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'skydived',
-    //     category: 'TRUTH',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'blacked out after drinking',
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'given a lapdance',
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: "licked someone's ear",
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'streaked in public',
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'kissed anyone in this room',
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'had sex in a public area',
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'cheated on someone',
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'hooked up with more than one person in one day',
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'had sex on the beach',
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'tried a drug harder than marijuana',
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'showered with someone else',
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'tried a psychadelic drug',
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: "had a crush on my friend's crush/significant other",
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'hooked up with/had a crush on a teacher',
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'gone down on anyone',
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'had someone go down on me',
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'done a 69',
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
-    // {
-    //     text: 'read pornographic material',
-    //     category: 'DARE',
-    //     game: 'neverhaveiever'
-    // },
     {
-        text: 'truth or dare6',
+        text: 'your first heartbreak',
+        category: 'TRUTH',
+        game: 'truthordare'
+    },
+    {
+        text: 'your first time having sex',
+        category: 'TRUTH',
+        game: 'truthordare'
+    },
+    {
+        text: 'your most embarassing sex story',
+        category: 'TRUTH',
+        game: 'truthordare'
+    },
+    {
+        text: 'try to convince a random person that you met them last week',
         category: 'DARE',
         game: 'truthordare'
     },
     {
-        text: 'truth or dare7',
+        text: 'switch clothes with someone in the room',
         category: 'DARE',
         game: 'truthordare'
     },
     {
-        text: 'truth or dare8',
+        text: 'drink 3 shots of alcohol one after the other',
         category: 'DARE',
         game: 'truthordare'
     },
     {
-        text: 'truth or dare9',
+        text: 'scream "PENIS" to a public audience',
         category: 'DARE',
         game: 'truthordare'
     },
     {
-        text: 'truth or dare10',
+        text: 'give a foot massage to someone present',
+        category: 'DARE',
+        game: 'truthordare'
+    },
+    {
+        text: 'ask a random stranger to make out with you',
+        category: 'DARE',
+        game: 'truthordare'
+    },
+    {
+        text: 'get a shower with all your clothes on',
+        category: 'DARE',
+        game: 'truthordare'
+    },
+    {
+        text: 'let someone write on your head with a permanent marker',
+        category: 'DARE',
+        game: 'truthordare'
+    },
+    {
+        text: 'blind text someone',
+        category: 'DARE',
+        game: 'truthordare'
+    },
+    {
+        text: 'call a pizza place and order something not on their menu',
+        category: 'DARE',
+        game: 'truthordare'
+    },
+    {
+        text: 'eat a raw egg',
+        category: 'DARE',
+        game: 'truthordare'
+    },
+    {
+        text: 'make out with anyone in this room',
+        category: 'DARE',
+        game: 'truthordare'
+    },
+    {
+        text: 'write a Facebook post (content determined by other players)',
+        category: 'DARE',
+        game: 'truthordare'
+    },
+    {
+        text: 'take a selfie with a toilet and post it on Facebook',
         category: 'DARE',
         game: 'truthordare'
     },

@@ -43,7 +43,7 @@ class App extends React.Component {
                 <GameButtonHolder />
                 {
                     this.props.categoryChange.game === '' ?
-                    null :
+                    <div style={styles.middle}>Hover above to choose your game.</div> :
                     <div style={styles.middle}>
                         <MiddleContainer />
                         <ButtonHolder categoryChange={this.props.categoryChange} changeAndReset={(cat) => this.props.changeAndReset(cat)} />
