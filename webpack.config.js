@@ -6,6 +6,10 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     devtool: 'eval-source-map',
+    devServer: {
+        compress: true,
+        public: 'truthornever.herokuapp.com'
+    },
     entry: [
         'babel-polyfill',
         // 'webpack-dev-server/client?http://localhost:3000',
