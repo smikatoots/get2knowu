@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Get2KnowU</title>
+    <meta name="description" content="Get2KnowU">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Universal */
+        body {
+            font-family: "Avenir";
+            background-color: black;
+            color: white;
+            margin: auto;
+            height: 100vh;
+            cursor: default;
+        }
+
+        #prompt {
+            font-size: 70px;
+        }
+        /* Buttons */
+        button:active {
+            color: white;
+            outline: none;
+        }
+        button:focus {
+            color: white;
+            outline: none;
+        }
+
+        @keyframes open {
+            from { transform: scale(0) }
+            to { transform: scale(1) }
+        }
+
+        @keyframes close {
+            from { transform: scale(1) }
+            to { transform: scale(0) }
+        }
+
+        .buttons-hidden {
+            animation: close 0.8s 1s normal forwards ease-in-out;
+        }
+        .mild-hidden {
+            animation: close 0.3s 1s normal forwards ease-in-out;
+        }
+        .wild-hidden {
+            animation: close 0.3s 1.30s normal forwards ease-in-out;
+        }
+        .both-hidden {
+            animation: close 0.3s 1.60s normal forwards ease-in-out;
+        }
+
+        .buttons-show {
+            animation: open 0.8s normal ease-in-out;
+        }
+        .mild-show {
+            animation: open 0.3s normal ease-in-out;
+        }
+        .wild-show {
+            animation: open 0.3s normal ease-in-out;
+        }
+        .both-show {
+            animation: open 0.3s normal ease-in-out;
+        }
+        .mild, .wild, .both {
+            outline: none !important;
+        }
+        .mild:active, .mild:focus, .mild:hover, .mild:visited {
+            background-color: #287CA7;
+        }
+        .wild:active, .wild:focus, .wild:hover {
+            background-color: #9A0951;
+        }
+        .both:active, .both:focus, .both:hover {
+            background-color: #443B83;
+        }
+        .normal-button:hover {
+            background-color: black;
+        }
+
+        @media screen and (max-width: 480px) {
+            #prompt {
+                font-size: 60px;
+            }
+        }
+
+    </style>
+</head>
+
+<body class="view-login">
+    <div id="root"></div>
+<script type="text/javascript" src="/main-9ef28386f8eb0fcffe5e.min.js"></script></body>
+
+</html>
