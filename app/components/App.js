@@ -43,10 +43,14 @@ class App extends React.Component {
                 onKeyDown={(event) => this.props.handleKeyPress(event)}>
                 {/* <Header /> */}
                 <GameButtonHolder />
-                <div style={styles.middle}>
-                    <MiddleContainer />
-                    <ButtonHolder categoryChange={this.props.categoryChange} changeAndReset={(cat) => this.props.changeAndReset(cat)} />
-                </div>
+                {
+                    this.props.categoryChange.game === '' ?
+                    null :
+                    <div style={styles.middle}>
+                        <MiddleContainer />
+                        <ButtonHolder categoryChange={this.props.categoryChange} changeAndReset={(cat) => this.props.changeAndReset(cat)} />
+                    </div>
+                }
             </div>
         );
     }
