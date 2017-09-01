@@ -59,11 +59,11 @@ module.exports = [
         category: 'MILD',
         game: 'neverhaveiever'
     },
-    {
-        text: 'kissed in the rain',
-        category: 'MILD',
-        game: 'neverhaveiever'
-    },
+    // {
+    //     text: 'kissed in the rain',
+    //     category: 'MILD',
+    //     game: 'neverhaveiever'
+    // },
     {
         text: 'watched a horror movie by myself',
         category: 'MILD',
@@ -89,11 +89,11 @@ module.exports = [
         category: 'MILD',
         game: 'neverhaveiever'
     },
-    {
-        text: 'kissed someone on the lips',
-        category: 'MILD',
-        game: 'neverhaveiever'
-    },
+    // {
+    //     text: 'kissed someone on the lips',
+    //     category: 'MILD',
+    //     game: 'neverhaveiever'
+    // },
     {
         text: 'peed in a swimming pool',
         category: 'MILD',
@@ -159,118 +159,143 @@ module.exports = [
         category: 'MILD',
         game: 'neverhaveiever'
     },
+    // {
+    //     text: 'blacked out after drinking',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'given a lapdance',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: "licked someone's ear",
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'streaked in public',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'kissed anyone in this room',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'had sex in a public area',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'cheated on someone',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'hooked up with more than one person in one day',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'had sex on the beach',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'tried a drug harder than marijuana',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'showered with someone else',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'tried a psychadelic drug',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: "had a crush on my friend's crush/significant other",
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'hooked up with/had a crush on a teacher',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'gone down on anyone',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'had someone go down on me',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'done a 69',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'read pornographic material',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'smoked cigarettes',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'tried cocaine',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'tried molly',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'skinny dipped',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
+    // {
+    //     text: 'gotten crossfaded',
+    //     category: 'WILD',
+    //     game: 'neverhaveiever'
+    // },
     {
-        text: 'blacked out after drinking',
+        text: '[too explicit for this demo]',
         category: 'WILD',
         game: 'neverhaveiever'
     },
     {
-        text: 'given a lapdance',
+        text: '[too wild for my bosses to see]',
         category: 'WILD',
         game: 'neverhaveiever'
     },
     {
-        text: "licked someone's ear",
+        text: '[too crazy for a live audience]',
         category: 'WILD',
         game: 'neverhaveiever'
     },
     {
-        text: 'streaked in public',
+        text: '[too much... just too much]',
         category: 'WILD',
         game: 'neverhaveiever'
     },
     {
-        text: 'kissed anyone in this room',
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: 'had sex in a public area',
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: 'cheated on someone',
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: 'hooked up with more than one person in one day',
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: 'had sex on the beach',
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: 'tried a drug harder than marijuana',
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: 'showered with someone else',
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: 'tried a psychadelic drug',
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: "had a crush on my friend's crush/significant other",
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: 'hooked up with/had a crush on a teacher',
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: 'gone down on anyone',
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: 'had someone go down on me',
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: 'done a 69',
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: 'read pornographic material',
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: 'smoked cigarettes',
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: 'tried cocaine',
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: 'tried molly',
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: 'skinny dipped',
-        category: 'WILD',
-        game: 'neverhaveiever'
-    },
-    {
-        text: 'gotten crossfaded',
+        text: '[too wild for your eyes]',
         category: 'WILD',
         game: 'neverhaveiever'
     },
