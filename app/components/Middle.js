@@ -49,9 +49,18 @@ class Middle extends React.Component {
         }
 
         return (
-            <div id="middle" style={styles.middle}>
-                <p id="never" style={styles.never}>{never}</p>
-                <p id="prompt" style={styles.prompt}>{this.props.categoryChange.contents[this.props.textChange].text}.</p>
+
+            <div>
+                {
+                    this.props.categoryChange.game === '' ?
+                    <div id="middle" style={styles.middle}>
+                        <p id="never" style={styles.never}>Hover above to choose your game.</p>
+                    </div> :
+                    <div id="middle" style={styles.middle}>
+                        <p id="never" style={styles.never}>{never}</p>
+                        <p id="prompt" style={styles.prompt}>{this.props.categoryChange.contents[this.props.textChange].text}.</p>
+                    </div>
+                }
             </div>
         );
     }

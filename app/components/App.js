@@ -12,6 +12,7 @@ import { Route, Switch } from 'react-router-dom';
 const styles = {
     main: {
         margin: 'auto',
+        paddingTop: '100px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -27,7 +28,7 @@ const styles = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        flexDirection: 'column'
+        flexDirection: 'column',
         fontSize: '50px'
     }
 
@@ -42,14 +43,10 @@ class App extends React.Component {
                 onKeyDown={(event) => this.props.handleKeyPress(event)}>
                 {/* <Header /> */}
                 <GameButtonHolder />
-                {
-                    this.props.categoryChange.game === '' ?
-                    <div style={styles.middle}>Hover above to choose your game.</div> :
-                    <div style={styles.middle}>
-                        <MiddleContainer />
-                        <ButtonHolder categoryChange={this.props.categoryChange} changeAndReset={(cat) => this.props.changeAndReset(cat)} />
-                    </div>
-                }
+                <div style={styles.middle}>
+                    <MiddleContainer />
+                    <ButtonHolder categoryChange={this.props.categoryChange} changeAndReset={(cat) => this.props.changeAndReset(cat)} />
+                </div>
             </div>
         );
     }

@@ -290,7 +290,37 @@ module.exports = [
         game: 'neverhaveiever'
     },
     {
-        text: '[too much... just too much]',
+        text: '[too wild for you, hun]',
+        category: 'WILD',
+        game: 'neverhaveiever'
+    },
+    {
+        text: '[too much for today]',
+        category: 'WILD',
+        game: 'neverhaveiever'
+    },
+    {
+        text: '[censored just for today]',
+        category: 'WILD',
+        game: 'neverhaveiever'
+    },
+    {
+        text: '[beeeeeeeeeeep]',
+        category: 'WILD',
+        game: 'neverhaveiever'
+    },
+    {
+        text: "[shh it's a secret!]",
+        category: 'WILD',
+        game: 'neverhaveiever'
+    },
+    {
+        text: '[too much for now]',
+        category: 'WILD',
+        game: 'neverhaveiever'
+    },
+    {
+        text: "[i'll just tell you later!]",
         category: 'WILD',
         game: 'neverhaveiever'
     },
