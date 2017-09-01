@@ -28,6 +28,7 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'column'
+        fontSize: '50px'
     }
 
 };
@@ -39,7 +40,7 @@ class App extends React.Component {
                 style={Object.assign({}, styles.main, { backgroundColor: this.props.categoryChange.color, outline: 'none' })}
                 tabIndex="1"
                 onKeyDown={(event) => this.props.handleKeyPress(event)}>
-                <Header />
+                {/* <Header /> */}
                 <GameButtonHolder />
                 {
                     this.props.categoryChange.game === '' ?
